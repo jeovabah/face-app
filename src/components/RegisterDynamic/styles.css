@@ -1,0 +1,37 @@
+.container-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container-register input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.container-register button {
+  width: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--background-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.container-register button:hover {
+  filter: opacity(0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+.container-register label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

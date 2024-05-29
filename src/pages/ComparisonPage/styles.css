@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container-logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 50px;
+}
+
+.container-logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.container-face {
+  min-width: 600px;
+  min-height: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.container-header img {
+  width: 100%;
+  max-width: 50px;
+  height: 100%;
+  max-height: 50px;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.container-webcam {
+  margin-top: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.face-webcam {
+  max-width: 200px;
+  height: 280px;
+  border-radius: 20px;
+}
+
+.button-face {
+  background-color: var(--background-color);
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 200px;
+  font-size: 1.2rem;
+
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  margin: 20px 0;
+}
+
+.button-face:hover {
+  filter: opacity(0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container-logo {
+    position: relative;
+    margin: 20px;
+  }
+
+  .container-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+  }
+
+  .container-face {
+    min-width: 300px;
+    min-height: 200px;
+  }
+
+  .container-header {
+    justify-content: center;
+  }
+
+  .container-header img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  .container-webcam {
+    margin-top: 10px;
+  }
+
+  .face-webcam {
+    max-width: 150px;
+    height: 200px;
+  }
+
+  .button-face {
+    width: 150px;
+    font-size: 1rem;
+  }
+}
