@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-myapp-dev-0bcea-authRole",
+      "UnauthRoleArn": "arn:aws:iam::828921808467:role/amplify-myapp-dev-0bcea-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::828921808467:role/amplify-myapp-dev-0bcea-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-myapp-dev-0bcea-deployment",
+      "UnauthRoleName": "amplify-myapp-dev-0bcea-unauthRole",
+      "StackName": "amplify-myapp-dev-0bcea",
+      "StackId": "arn:aws:cloudformation:us-east-1:828921808467:stack/amplify-myapp-dev-0bcea/da1e90a0-1647-11ef-a90d-12eb56da5593",
+      "AmplifyAppId": "d2dlxjdfokju6q"
+    }
+  },
+  "auth": {
+    "myapp6a08a72e6a08a72e": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-myapp-dev-0bcea-deployment/amplify-cfn-templates/auth/myapp6a08a72e6a08a72e-cloudformation-template.json",
+        "logicalId": "authmyapp6a08a72e6a08a72e"
+      },
+      "lastPushTimeStamp": "2024-05-20T01:42:37.622Z",
+      "output": {
+        "UserPoolId": "us-east-1_jzUc9HxMM",
+        "AppClientIDWeb": "4d3osgf3uaa7jenhk8n7dacdrs",
+        "AppClientID": "152qm6i5at8d9ivnb11e9nhn0e",
+        "IdentityPoolId": "us-east-1:a45d042f-8437-4b8f-967d-0ef455e732c9",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:828921808467:userpool/us-east-1_jzUc9HxMM",
+        "IdentityPoolName": "myapp6a08a72e_identitypool_6a08a72e__dev",
+        "UserPoolName": "myapp6a08a72e_userpool_6a08a72e"
+      },
+      "lastPushDirHash": "1Ads9Ds6kt2xj0KRZwQBiNHgaNg="
+    }
+  }
+}
